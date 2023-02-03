@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url(fontovi/FontsFree-Net-All-Round-Gothic-W01-Demi.ttf);
+    font-family: gothic;
+}
+
+@font-face {
+    src: url(fontovi/Comfortaa-Regular.ttf);
+    font-family: comforta;
+}
+
+@font-face {
+    src: url(fontovi/Comfortaa-Bold.ttf);
+    font-family: comforta b;
+}
+
+.banner {
+    background: linear-gradient(to bottom right, #233142, #455d7a);
+    height: 100vh;
+
+}
+
+.log_in_card {
+    background-color: #fff;
+    height: 70vh;
+    width: 30vw;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: 0.3s cubic-bezier(.3, 0, 0, .5);
+    overflow: hidden;
+    border-radius: 22px;
+    display: flex;
+    text-align: center;
+}
+
+.card {
+    background: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+card h1 {
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}

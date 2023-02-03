@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Webl | Signup</title>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="/js/validation.js" defer></script>
+    <link rel="stylesheet" href="signup_design.css">
+    <link rel="stylesheet" href="fontovi/Comfortaa-Light.ttf">
+
+
+</head>
+
+<body>
+
+    <div class="banner">
+        <h1>Prijavi se</h1>
+
+        <form action="process-signup.php" method="post" id="signup" novalidate>
+            <div class="input">
+                <!-- <label for="name">Name</label> -->
+                <!-- <span>Name</span> -->
+                <input type="text" id="name" name="name" placeholder="Name" autocomplete="none">
+            </div>
+
+            <div class="input">
+                <!-- <label for="email">email</label> -->
+                <!-- <span>E-mail</span> -->
+                <input type="email" id="email" name="email" placeholder="E-mail" autocomplete=none>
+            </div>
+
+            <div class="input">
+                <!-- <label for="password">Password</label> -->
+                <!-- <span>Password</span> -->
+                <input type="password" id="password" name="password" placeholder="Password">
+            </div>
+
+            <div class="input">
+                <!-- <label for="password_confirmation">Repeat password</label> -->
+                <!-- <span>repeat password</span> -->
+                <input type="password" id="password_confirmation" name="password_confirmation"
+                    placeholder="Retype password">
+            </div>
+
+            <button>Prijavi se</button>
+        </form>
+        <div class="footer">
+            <p>Vec si clan? <a href="login1.html">Uloguj se</a></p>
+            <style type="text/css">
+                p {
+                    font-family: 'comforta';
+                }
+
+                a {
+                    color: #fff;
+                }
+
+                a:hover {
+                    color: #3479fc;
+                }
+            </style>
+        </div>
+    </div>
+
+</body>
+
+</html>

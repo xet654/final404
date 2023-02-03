@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.about_us {
+    height: 100vh;
+    padding: 0 10vw 0 10vw;
+    /* display: flex; */
+}
+
+
+.title1 {
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10vh;
+    z-index: 1;
+}
+
+.title1 p {
+    font-size: 20px !important;
+    margin-right: 42vw;
+    margin-top: 18px;
+    line-height: 34px;
+}
+
+.detail {
+    width: 525px;
+    height: 20px;
+    background: linear-gradient(to right, #3479fc, rgb(101, 33, 228));
+    opacity: 0.7;
+    position: absolute;
+    top: 142.4vh;
+    z-index: -1;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.cikice {
+    height: 350px;
+    width: 500px;
+    background-image: url("cikice-posluju.png");
+    background-size: cover;
+    position: absolute;
+    right: 15vh;
+    top: 122vh;
+}
+
+.title2 {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 130px;
+}
+
+.boxes {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.boxes h1 {
+    color: #fff !important;
+}
+
+.boxes p {
+    font-size: 18px;
+    font-family: 'comforta b';
+    line-height: 25px;
+}
+
+.box1 {
+    width: 300px;
+    text-align: center;
+}
+
+#number {
+    background: linear-gradient(to bottom right, #3479fc, rgb(101, 33, 228));
+    width: 60px;
+    margin: auto;
+    border-radius: 28px;
+    font-size: 25px;
+    margin-bottom: 15px;
+    transition: 0.2s cubic-bezier(.3, 0, 0, 0.5);
+}
+
+#number:hover {
+    border-bottom-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+@media screen and (max-width:770px) {
+    .about_us {
+        height: auto;
+        padding: 0 10vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .title1 {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 3vh;
+        z-index: 1;
+    }
+
+    .title1 p {
+        font-size: 1em !important;
+        margin-right: 0;
+        margin-top: 15px;
+        line-height: 35px;
+    }
+
+    .title2 {
+        margin-top: 100px;
+    }
+
+    .detail {
+        width: 280px;
+        height: 15px;
+        background: linear-gradient(to right, #3479fc, rgb(101, 33, 228));
+        opacity: 0.7;
+        position: absolute;
+        top: 127.6vh;
+        z-index: -1;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+
+    .cikice {
+        height: 200px;
+        width: 300px;
+        background-image: url("cikice-posluju.png");
+        background-size: cover;
+        position: inherit !important;
+        margin-top: 100px;
+    }
+
+    .boxes {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .boxes h1 {
+        color: #fff !important;
+    }
+
+    .boxes p {
+        font-size: 15px;
+        font-family: 'comforta b';
+        line-height: 25px;
+    }
+
+    .box1 {
+        width: 300px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    #number {
+        background: linear-gradient(to bottom right, #3479fc, rgb(101, 33, 228));
+        width: 60px;
+        margin: auto;
+        border-radius: 28px;
+        font-size: 25px;
+        margin-bottom: 15px;
+        transition: 0.2s cubic-bezier(.3, 0, 0, 0.5);
+    }
+
+    #number:hover {
+        border-bottom-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+
+
+}

@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background: url("pozadinas-linijama-planeta.png");
+    background-size: cover;
+}
+
+@font-face {
+    src: url(fontovi/FontsFree-Net-All-Round-Gothic-W01-Demi.ttf);
+    font-family: gothic;
+}
+
+@font-face {
+    src: url(fontovi/Comfortaa-Regular.ttf);
+    font-family: comforta;
+}
+
+@font-face {
+    src: url(fontovi/Comfortaa-Bold.ttf);
+    font-family: comforta b;
+}
+
+.form {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+h1 {
+    color: white;
+    font-family: 'gothic';
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+button {
+    width: 350px;
+    font-family: gothic;
+    font-size: 35px;
+    padding: 2px 0;
+    background-color: #3479fc;
+    border-radius: 60px;
+    border: none;
+    color: white;
+    box-shadow: -5px 7px 8px rgba(0, 0, 0, 0.5);
+    ;
+    transition: 0.2s cubic-bezier(.3, 0, 0, .5);
+    margin-top: 60px;
+}
+
+button:hover {
+    background-color: rgba(52, 121, 252, 0.7);
+}
+
+input {
+    width: 330px;
+    padding: 0 5px;
+    height: 43px;
+    font-size: 16px;
+    border: none;
+    /* background: none; */
+    outline: none;
+    margin: 10px 0;
+    border-radius: 60px;
+    transition: 0.3s cubic-bezier(.3, 0, 0, .5);
+}
+
+input::placeholder {
+    font-family: 'comforta b';
+    text-align: left;
+}
+
+
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+
+}
+
+input:focus::placeholder {
+    color: white;
+}
+
+input:hover {
+    transform: scale(1.06);
+}
+
+input:focus~before,
+input:valid~before {
+    width: 100%;
+}
+
+input,
+select,
+textarea {
+    font-family: 'comforta b';
+    padding-inline-start: 20px;
+}
+
+input:focus,
+select,
+textarea {
+    color: white;
+}
+
+.footer {
+    font-family: 'comforta';
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #3479fc;
+}
+
+@media screen and (max-width:1000px) {
+
+    html,
+    body {
+        background: url("pozadinatelefon.png");
+        height: 750px;
+    }
+
+    .form {
+        /* background: transparent; */
+
+        padding: 50px;
+        gap: 40px;
+    }
+
+    h1 {
+        filter: drop-shadow(-5px 7px 8px rgba(0, 0, 0, 1));
+        font-size: 120px;
+        margin-bottom: 60px;
+    }
+
+
+    button {
+        width: 600px;
+        font-size: 70px;
+        padding: 3px 0;
+        margin-top: 60px;
+    }
+
+    input {
+        width: 650px;
+        padding: 0 5px;
+        height: 90px;
+        font-size: 35px;
+        border: none;
+        /* background: none; */
+        outline: none;
+        margin: 10px 0;
+        border-radius: 60px;
+        transition: 0.3s cubic-bezier(.3, 0, 0, .5);
+    }
+
+    p {
+        font-size: 25px;
+        margin-top: 20px;
+        color: antiquewhite;
+    }
+
+    input,
+    select,
+    textarea {
+        font-family: 'comforta b';
+        padding-inline-start: 40px;
+    }
+
+}
